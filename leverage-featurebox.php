@@ -1,9 +1,9 @@
 <?php
 /*
-* Plugin Name: Leverage FeatureBox
-* Plugin URI: http://www.increasingleverage.com
+* Plugin Name: Leverage FeatureBox Plugin
+* Plugin URI: http://www.increasingleverage.com/leverage-featurebox-wordpress-plugin
 * Description: The Leverage FeatureBox widget converts website visitors into email subscribers.
-* Version: 1.0
+* Version: 1.1
 * Author: Zachary Smith | Increasing Leverage
 * Author URI: http://www.increasingleverage.com
 * Copyright 2015 Zachary Smith
@@ -52,6 +52,7 @@ public function widget( $args, $instance )
 		else {
 			$image_uri = __( '', 'zs' );
 		}
+		// Output admin widget options form
 		$defaults = array(
 			'title' => '',
 			'copy' => '',
@@ -59,17 +60,17 @@ public function widget( $args, $instance )
 		);
 		$instance = wp_parse_args( (array) $instance, $defaults);
 		?>
-<p>Title: <input class="widefat" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $instance['title'] ); ?>" /></p>
+		<p>Title: <input class="widefat" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $instance['title'] ); ?>" /></p>
 		<p>Copy: <textarea rows="8" cols="20" class="widefat" name="<?php echo $this->get_field_name( 'copy' ); ?>"><?php echo esc_attr( $instance['copy'] ); ?></textarea></p>
 		<p>HTML form: <textarea rows="8" cols="20" class="widefat" name="<?php echo $this->get_field_name( 'form' ); ?>"><?php echo esc_attr( $instance['form'] ); ?></textarea></p>
-    <p>
-      <label for="<?php echo $this->get_field_id('image_uri'); ?>">Image</label><br />
-        <img class="custom_media_image" src="<?php echo $image_uri; ?>" style="margin:0;padding:0;max-width:100px;float:left;display:inline-block" />
-        <input type="text" class="widefat custom_media_url" name="<?php echo $this->get_field_name('image_uri'); ?>" id="<?php echo $this->get_field_id('image_uri'); ?>" value="<?php echo $image_uri; ?>">
-       </p>
-       <p>
-        <input type="button" value="<?php _e( 'Upload Image', 'zs' ); ?>" class="button custom_media_upload" id="custom_image_uploader"/>
-    </p>
+	    <p>
+	      <label for="<?php echo $this->get_field_id('image_uri'); ?>">Image</label><br />
+	        <img class="custom_media_image" src="<?php echo $image_uri; ?>" style="margin:0;padding:0;max-width:100px;float:left;display:inline-block" />
+	        <input type="text" class="widefat custom_media_url" name="<?php echo $this->get_field_name('image_uri'); ?>" id="<?php echo $this->get_field_id('image_uri'); ?>" value="<?php echo $image_uri; ?>">
+	       </p>
+	       <p>
+	        <input type="button" value="<?php _e( 'Upload Image', 'zs' ); ?>" class="button custom_media_upload" id="custom_image_uploader"/>
+	    </p>
 		<?php 
 	}
 }
