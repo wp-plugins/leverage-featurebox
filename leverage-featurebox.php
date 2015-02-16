@@ -2,7 +2,7 @@
 /*
 * Plugin Name: Leverage FeatureBox
 * Plugin URI: http://www.increasingleverage.com/leverage-featurebox-wordpress-plugin
-* The Leverage FeatureBox widget creates responsive, formatted, high converting optin feature boxes that turn your website visitors into subscribers.
+* Description: The Leverage FeatureBox widget creates responsive, formatted, high converting optin feature boxes that turn your website visitors into subscribers.
 * Version: 1.1
 * Author: Zachary Smith | Increasing Leverage
 * Author URI: http://www.increasingleverage.com
