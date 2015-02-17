@@ -46,3 +46,6 @@ The Leverage FeatureBox is easy to use.  You just drop it into the widget area, 
 4. Click "Install Now"
 5. Click "Activate"
 
+== Frequently Asked Questions ==
+
+You can check out our FAQs on our website: http://increasingleverage.com/leverage-featurebox-faqs/
