@@ -24,9 +24,8 @@ public function widget( $args, $instance )
 		static $i = 0;
 		$i++;
 
-		$input .= '<div class="widget_' . $i . '">
-
-		<h2>' . $instance['title'] . '</h2>';
+		$input .= '<div class="widget_' . $i . '">';
+		$input .= '<h2>' . $instance['title'] . '</h2>';
 		$input .= '<img src="' . $instance[ 'image_uri'] . '" class="alignright">';
 		$input .= '<p>' . $instance['copy'] . '</p>';
 		$input .= '</br>';
